@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browse</title>
+</head>
+<body>
+    {% if list %}
+        <h1 align="center" > The uploaded Files are:</h1>
+        {% for name in list %}
+            <li align="center"> {{ name }}</li>
+        {% endfor %}
+    {% endif %}
+    <h3 align="center">{{ message }}</h3>
+
+</body>
+</html>

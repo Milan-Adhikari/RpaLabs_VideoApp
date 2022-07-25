@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+</head>
+<body>
+    <h1 align="center" >Upload Video</h1>
+    <form align="center" method="POST" enctype = 'multipart/form-data'>
+        {{form.hidden_tag()}}
+        {{form.file()}}
+        {{form.submit()}}
+    </form>
+    <h3 align="center" >{{ message }}</h3>
+</body>
+</html>
